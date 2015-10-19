@@ -1,9 +1,5 @@
 package com.github.designbuilder;
 
-/**
- *  This is the interface that will be returned from the builder
- */
-
 
 public interface RobotPlan {
 	

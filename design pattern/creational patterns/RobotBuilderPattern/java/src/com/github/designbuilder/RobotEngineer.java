@@ -5,10 +5,7 @@ public class RobotEngineer {
 	private RobotBuilder robotBuilder;
 	
 	
-	/**
-	 * OldRobotBuilder specification is sent to the engineer
-	 * @param robotBuilder
-	 */
+	
 	
 	public RobotEngineer(RobotBuilder robotBuilder){
 		
@@ -17,10 +14,6 @@ public class RobotEngineer {
 	}
 	
 
-	/**
-	 * 
-	 * @return Robot made from the OldRobotBuilder
-	 */
 	public Robot getRobot(){
 		
 		return this.robotBuilder.getRobot();

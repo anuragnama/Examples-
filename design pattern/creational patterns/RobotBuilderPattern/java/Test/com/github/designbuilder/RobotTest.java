@@ -15,7 +15,7 @@ import com.github.designbuilder.RobotEngineer;
 
 public class RobotTest {
 
-	private RobotEngineer target1;
+	
 	private Robot target;
 	private RobotBuilder target3;
 	private  RobotEngineer robotEngineer;
@@ -30,40 +30,61 @@ public class RobotTest {
 		 target3 = new OldRobotBuilder();
 		
 		robotEngineer = new RobotEngineer(target3);
+		
+		robotEngineer.makeRobot();
+		
+	   target = robotEngineer.getRobot();
 		 
 	    
 	}
 	
 	
+	@Test
+	public void test_getRobotHead(){
+		
+		String name= "robo head";
+	     
+		assertEquals(name, target.getRobotHead());
+		
+	}
+	
+	
+	@Test
+	public void test_getRobotArms(){
+		
+		String name= "robo arms";
+		
+	     
+		assertEquals(name, target.getRobotArms());
+		
+	}
+	
+	
+	@Test
+	public void test_getRobotLegs(){
+		
+		String name= "robo legs";
+	     
+		assertEquals(name, target.getRobotLegs());
+		
+	}
+	
+	@Test
+	public void test_getRobotTorso(){
+		
+		String name= "robo torso";
+		
+	     
+		assertEquals(name, target.getRobotTorso());
+		
+	}
 	
 	@Test
 	public void notNullRobotBuilder(){
 		
-		//RobotBuilder old_robot_builder= new OldRobotBuilder();
 		
 		Assert.assertNotNull(target3);
 		
 	}
-	
-	
-	@Test
-	public void sucess_robotEngineer(){
-		
-		
-     robotEngineer.makeRobot();
-     Robot target = robotEngineer.getRobot();
-		
-		
-	 Assert.assertEquals("robo head", target.getRobotHead());
-	
-	 Assert.assertEquals("robo arms", target.getRobotArms());
-	 
-	 Assert.assertEquals("robo legs", target.getRobotLegs());
-	 
-	 Assert.assertEquals("robo torso", target.getRobotTorso());
-	
-		
-	}
-	
 	
 }
