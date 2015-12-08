@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name=" com.git.supercar.model.places.Location" table="supercarlocation" schema="supercar" >
+    <id name="locationid">
+              <generator class="increment"/>
+ 
+    </id>
+       
+       <property name="street"/>
+       <property name="city"/>
+       <property name="state"/>
+       <property name="pin"/>
+       
+    </class>
+   
+    </hibernate-mapping>
