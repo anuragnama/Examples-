@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name= "com.git.supercar.model.usermodel.User"  table="supercaruser" schema="supercar">
+    <id name="userid">
+    <generator class="increment"> </generator>
+    </id>
+    
+    <property name="username"/>
+     <property name="password"/>
+      <property name="dob"/>
+       <property name="gender"/>
+       <set name="addresses" cascade="all">
+       <key column="userid"/>
+       <one-to-many class="com.git.supercar.model.usermodel.Address"/>
+       
+       </set>
+   <joined-subclass name="com.git.supercar.model.usermodel.Employee" table="supercaremployee" schema="supercar">
+   <key column="userid"/>
+   <property name="joindate"></property>
+    <property name="role"></property>
+    <many-to-one name="branch" class="com.git.supercar.model.places.Branch"></many-to-one>
+    
+        <joined-subclass name="com.git.supercar.model.usermodel.Driver" table="supercardriver" schema="supercar">
+             <key column="userid"/>
+             <property name="licensenumber"/>
+          </joined-subclass>
+   </joined-subclass>
+   
+   
+    </class>
+    
+  
+    </hibernate-mapping>

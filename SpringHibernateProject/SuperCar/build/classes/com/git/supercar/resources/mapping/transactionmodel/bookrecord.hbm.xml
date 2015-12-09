@@ -1,0 +1,25 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.transaction.BookingRecord" table="supercarbooking" schema="supercar">
+    <id name="bookingid" >
+    <generator class="increment"/>
+    </id>
+    <property name="dateofjourney"/>
+     <property name="distance"/>
+      <property name="numberofpassenger"/>
+       <property name="driver_flag"/>
+        <property name="confirm_flag"/>
+        <many-to-one name="source" class="com.git.supercar.model.places.Location"></many-to-one>
+        <many-to-one name="destination" class="com.git.supercar.model.places.Location" ></many-to-one>
+           <many-to-one name="user" class="com.git.supercar.model.usermodel.User" ></many-to-one>
+            <many-to-one name="car" class="com.git.supercar.model.vehicle.Car" ></many-to-one>
+            <many-to-one name="timesheet" class="com.git.supercar.model.transaction.Timesheet" ></many-to-one>
+    
+    
+    
+    </class>
+    
+    </hibernate-mapping>

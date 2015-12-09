@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.transaction.CarSellingRecord" table="supercarcarsale" schema="supercar" >
+    <id name="carsellid">
+    <generator class="foreign">
+    <param name="property">carForSaleRecord</param>
+    </generator>
+  
+    </id>
+       <property name="dateofsale"/>  
+       <many-to-one name="user" class="com.git.supercar.model.usermodel.User">
+       <column name="userid"/>
+       
+       </many-to-one>
+        <many-to-one name="payment" class="com.git.supercar.model.payment.Payment"></many-to-one>
+         <one-to-one name="carForSaleRecord" class="com.git.supercar.model.transaction.CarForSaleRecord"></one-to-one>
+         
+         
+    </class>
+   
+    </hibernate-mapping>

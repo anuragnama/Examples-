@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.transaction.Timesheet" table="supercartimesheet" schema="supercar">
+    <id name="timesheetid" >
+    <generator class="increment"/>
+    </id>
+    <property name="fromtime"/>
+     <property name="totime"/>
+      <property name="fromdate"/>
+       <property name="todate"/>
+        
+    </class>
+    
+    </hibernate-mapping>

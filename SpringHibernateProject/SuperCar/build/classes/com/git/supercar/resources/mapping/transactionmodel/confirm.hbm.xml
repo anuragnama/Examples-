@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.transaction.Confirmation" table="supercarconfirmation" schema="supercar" >
+    <id name="ccrid">
+    <generator class="increment"/>
+   
+    </id>
+       <property name="ccr_flag"/>  
+    
+     <one-to-one name="bookingRecord" class="com.git.supercar.model.transaction.BookingRecord"></one-to-one>
+     <many-to-one name="payment" class="com.git.supercar.model.payment.Payment"></many-to-one>
+       
+    </class>
+   
+    </hibernate-mapping>

@@ -115,5 +115,14 @@
 	<classpathentry kind="lib" path="D:/software/Spring3jars/libsfinalformvcsecurityandwebservices/tiles-jsp-2.2.2.jar"/>
 	<classpathentry kind="lib" path="D:/software/Spring3jars/libsfinalformvcsecurityandwebservices/tiles-servlet-2.2.2.jar"/>
 	<classpathentry kind="lib" path="D:/software/Spring3jars/libsfinalformvcsecurityandwebservices/tiles-template-2.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/hibernate-core-5.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/hibernate-testing.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/software/hibernate-distribution-3.5.0-CR-2/lib/hib/slf4j-api-1.5.8.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

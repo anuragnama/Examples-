@@ -26,7 +26,8 @@ public class Confirmation {
 	public int getCcrid() {
 		return ccrid;
 	}
-
+	
+ 
 	public void setCcrid(int ccrid) {
 		this.ccrid = ccrid;
 	}
