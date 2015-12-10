@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.vehicle.FualReading" table="supercarfualreading" schema="supercar">
+    <id name="fualreadingtypeid" >
+    <generator class="increment"/>
+    </id>
+    
+    <property name="readingdate"/>
+    <property name="readingtime"/>
+    <property name="reading"/>
+    <property name="version"/>
+    
+    <many-to-one name="car" class="com.git.supercar.model.vehicle.Car">
+    <column name="carid"></column>
+    </many-to-one>
+    
+    </class>
+    
+    </hibernate-mapping>

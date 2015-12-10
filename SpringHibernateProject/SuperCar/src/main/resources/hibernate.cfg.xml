@@ -32,7 +32,8 @@
         <property name="hbm2ddl.auto">create</property>
 
       
-        <mapping resource="SuperCar/src/main/resources/hibernate.cfg.xml" />
+        <mapping resource="SuperCar/src/com.git.supercar.resources.mapping.usermodel.user.hbm.xml" />
+        <mapping resource="SuperCar/src/com.git.supercar.resources.mapping.usermodel.address.hbm.xml" />
     </session-factory>
 
 </hibernate-configuration>

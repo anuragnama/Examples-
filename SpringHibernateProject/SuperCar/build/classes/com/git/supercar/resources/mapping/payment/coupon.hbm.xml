@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.payment.Coupon" table="supercarcoupon" schema="supercar" >
+    <id name="couponid">
+              <generator class="increment"/>
+ 
+    </id>
+       
+       <property name="min_amount"/>
+       <property name="max_amount"/>
+       <property name="dis_amount"/>
+       <property name="valid_upto"/>
+       
+       
+       
+    </class>
+   
+    </hibernate-mapping>
