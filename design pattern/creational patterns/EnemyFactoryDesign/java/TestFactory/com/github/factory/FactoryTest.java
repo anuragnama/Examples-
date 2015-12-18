@@ -34,7 +34,7 @@ public class FactoryTest {
 	    }
 
 	    @Test
-	    public void testUFOEnemyShip() {
+	    public void TestUFOEnemyShip() {
 	      
 	        String shipName = "UFO Enemy Ship";
 	        double damage = 20.0;
@@ -56,7 +56,7 @@ public class FactoryTest {
 	    }
 
 	    @Test
-	    public void testRocketEnemyShip() {
+	    public void TestRocketEnemyShip() {
 	        
 	        String shipName = "Rocket Enemy Ship";
 	        double damage = 10.0;
@@ -78,7 +78,7 @@ public class FactoryTest {
 	    }
 
 	    @Test
-	    public void testBigUFOEnemyShip() {
+	    public void TestBigUFOEnemyShip() {
 
 
 	        String shipName = "Big UFO Enemy Ship";
@@ -101,7 +101,7 @@ public class FactoryTest {
 	    }
 
 	    @Test
-	    public  void testEnemyShipFactory() {
+	    public  void TestEnemyShipFactory() {
 	      
 
 	        EnemyShip newShip = target4.makeEnemyShip("U");
