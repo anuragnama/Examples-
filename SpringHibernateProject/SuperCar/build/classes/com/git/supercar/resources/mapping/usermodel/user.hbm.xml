@@ -29,8 +29,5 @@
           </joined-subclass>
    </joined-subclass>
    
-   
     </class>
-    
-  
     </hibernate-mapping>

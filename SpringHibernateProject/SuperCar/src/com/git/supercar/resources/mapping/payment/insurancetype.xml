@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.git.supercar.model.payment.InsuranceType" table="supercarinsurancetype" schema="supercar" >
+    
+    <id name="insurancetypeid">
+            <generator class="increment"/>      
+    </id>
+    
+       <property name="insurance_descr" unique="true"/>
+      
+       
+       </class>
+   
+    </hibernate-mapping>

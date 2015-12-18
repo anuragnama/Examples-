@@ -27,14 +27,16 @@ public class EnemyShipTesting {
 	            
 	           
 	        }
+	        
 	        else System.out.println("REWRITE AGAIN");
 	        }
 
 	        
-	    public static void doStuffEnemy(EnemyShip anEnemyShip){
-	        anEnemyShip.displayEnemyShip();
-	        anEnemyShip.followHeroShip();
-	        anEnemyShip.enemyShipShoots();
+	    public static void doStuffEnemy(EnemyShip enemyShip){
+	    	
+	        enemyShip.displayEnemyShip();
+	        enemyShip.followHeroShip();
+	        enemyShip.enemyShipShoots();
 	    }
 
 	

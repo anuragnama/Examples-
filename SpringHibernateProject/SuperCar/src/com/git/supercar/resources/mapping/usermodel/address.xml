@@ -3,14 +3,16 @@
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
     
     <hibernate-mapping>
+    
     <class name="com.git.supercar.model.usermodel.Address" table="supercaraddress" schema="supercar">
     <id name="email" />
+    
     <property name="mobile"/>
-     <property name="street"/>
-      <property name="city"/>
-       <property name="state"/>
-        <property name="country"/>
-         <property name="pin"/>
+    <property name="street"/>
+    <property name="city"/>
+    <property name="state"/>
+    <property name="country"/>
+     <property name="pin"/>
         
     
     </class>

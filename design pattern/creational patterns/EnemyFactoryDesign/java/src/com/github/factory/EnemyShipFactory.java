@@ -2,8 +2,6 @@ package com.github.factory;
 
 public class EnemyShipFactory {
 
-	
-	
 
 	public EnemyShip makeEnemyShip(String newShipType) {
 		
