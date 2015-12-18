@@ -14,13 +14,15 @@ import junit.framework.Assert;
 public class FactoryTest {
 
 
-	    private  ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	    
 	    private EnemyShip target1,target2,target3;
 	    private EnemyShipFactory target4;
+	    private  ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	    
 	    @Before
 	    public void setUp() {
-	            System.setOut(new PrintStream(outContent));
+	          
+	    	System.setOut(new PrintStream(outContent));
 	            target1 = new UfoEnemyShip();
 	            target2 = new RocketEnemyShip();
 	            target3 = new BigUfoEnemyShip();
@@ -56,7 +58,8 @@ public class FactoryTest {
 	    }
 
 	    @Test
-	    public void TestRocketEnemyShip() {
+	    public void TestRoketEnemyShip() {
+	    	
 	        
 	        String shipName = "Rocket Enemy Ship";
 	        double damage = 10.0;
