@@ -35,7 +35,7 @@ public class FactoryTest {
 	        System.setOut(null);
 	    }
 
-	    @Test
+	   @Test
 	    public void TestUFOEnemyShip() {
 	      
 	        String shipName = "UFO Enemy Ship";

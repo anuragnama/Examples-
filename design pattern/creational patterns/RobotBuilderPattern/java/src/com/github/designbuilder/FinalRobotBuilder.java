@@ -17,9 +17,6 @@ public static void main(String[] args){
 		robotEngineer.makeRobot();
 		
 		
-		/**
-		 * engineer returns the robot information
-		 */
 		Robot firstRobot = robotEngineer.getRobot();
 		
 		System.out.println("Robot Built");
